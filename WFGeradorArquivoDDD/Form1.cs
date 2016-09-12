@@ -153,7 +153,7 @@ namespace WFGeradorArquivoDDD
             conteudo.AppendLine("}                                                                                ");
 
 
-            GerarArquivo(String.Format(@"{0}\{1}{2}.cs", CaminhoRepositoryTxt.Text, nomeClasse, SufixoRepository.Text), conteudo.ToString());
+            GerarArquivo(String.Format(@"{0}\{1}{2}.cs", this.CaminhoRepositoryTxt.Text, nomeClasse, this.SufixoRepository.Text), conteudo.ToString());
 
         }
 
@@ -165,7 +165,7 @@ namespace WFGeradorArquivoDDD
             conteudo.AppendLine("                                                                           ");
             conteudo.AppendLine(String.Format("namespace {0}                           ",this.UsingIApplication.Text));
             conteudo.AppendLine("{                                                                          ");
-            conteudo.AppendLine(String.Format("    public interface I{0}{1} : I{1}{2}<{0}>         ",nomeClasse,this.SufixoApplicaion,this.SufixoBase));
+            conteudo.AppendLine(String.Format("    public interface I{0}{1} : I{1}{2}<{0}>         ",nomeClasse,this.SufixoApplicaion.Text,this.SufixoBase.Text));
             conteudo.AppendLine("    {                                                                      ");
             conteudo.AppendLine("    }                                                                      ");
             conteudo.AppendLine("}                                                                          ");
@@ -197,7 +197,7 @@ namespace WFGeradorArquivoDDD
             conteudo.AppendLine("    }                                                                                    ");
             conteudo.AppendLine("}                                                                                        ");
 
-            GerarArquivo(String.Format(@"{0}\{1}{2}.cs", this.CaminhoApplicationTxt.Text, nomeClasse, SufixoApplicaion.Text), conteudo.ToString());
+            GerarArquivo(String.Format(@"{0}\{1}{2}.cs", this.CaminhoApplicationTxt.Text, nomeClasse, this.SufixoApplicaion.Text), conteudo.ToString());
 
         }
 
