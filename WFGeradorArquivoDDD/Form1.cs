@@ -190,9 +190,9 @@ namespace WFGeradorArquivoDDD
             conteudo.AppendLine(String.Format("        private readonly I{0}{1} _{2}{1};                                ",nomeClasse,this.SufixoService.Text,nomeVariavel));
             conteudo.AppendLine("                                                                                         ");
             conteudo.AppendLine(String.Format("        public {0}{1}(I{0}{2} {3}{2})                         ",nomeClasse, this.SufixoApplicaion.Text,this.SufixoService.Text,nomeVariavel));
-            conteudo.AppendLine("            :base(clienteService)                                                        ");
+            conteudo.AppendLine(String.Format("            :base({0}{1})                                                        ", nomeVariavel, this.SufixoService.Text));
             conteudo.AppendLine("        {                                                                                ");
-            conteudo.AppendLine("            _clienteService = clienteService;                                            ");
+            conteudo.AppendLine(String.Format("            _{0}{1} = {0}{1};                                            ", nomeVariavel, this.SufixoService.Text));
             conteudo.AppendLine("        }                                                                                ");
             conteudo.AppendLine("    }                                                                                    ");
             conteudo.AppendLine("}                                                                                        ");
