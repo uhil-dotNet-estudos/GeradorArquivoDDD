@@ -1,7 +1,7 @@
 ![README.MD](http://ap.imagensbrasil.org/images/2016/10/04/d52474b66a13b442bad2d4e9b58f9909.jpg)
 
-# [Video.js - HTML5 Video Player](http://videojs.com)
-[![Build Status](https://travis-ci.org/videojs/video.js.svg?branch=master)](https://travis-ci.org/videojs/video.js)
+# [Jojer Framework](https://github.com/uhil-dotNet-estudos/GeradorArquivoDDD)
+[![Build Status](https://travis-ci.org/uhil-dotNet-estudos/GeradorArquivoDDD.svg?branch=master)](https://travis-ci.org/uhil-dotNet-estudos/GeradorArquivoDDD)
 [![Coverage Status](https://coveralls.io/repos/github/videojs/video.js/badge.svg?branch=master)](https://coveralls.io/github/videojs/video.js?branch=master)
 [![Slack Status](http://slack.videojs.com/badge.svg)](http://slack.videojs.com)
 
