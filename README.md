@@ -1,4 +1,4 @@
-![Video.js logo](http://videojs.com/img/logo.png)
+![README.MD](http://ap.imagensbrasil.org/images/2016/10/04/jokerFramework.jpg)
 
 # [Video.js - HTML5 Video Player](http://videojs.com)
 [![Build Status](https://travis-ci.org/videojs/video.js.svg?branch=master)](https://travis-ci.org/videojs/video.js)
