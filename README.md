@@ -20,8 +20,6 @@ Foco na agilidade.
 ```C#
 using System;
 
-#pragma warning disable 414, 3021
-
 /// <summary>Main task</summary>
 async Task<int, int> AccessTheWebAsync()
 {
