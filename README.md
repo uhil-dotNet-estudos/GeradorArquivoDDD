@@ -1,24 +1,20 @@
 ![README.MD](http://ap.imagensbrasil.org/images/2016/10/04/d52474b66a13b442bad2d4e9b58f9909.jpg)
 
-# [Jojer Framework](https://github.com/uhil-dotNet-estudos/GeradorArquivoDDD)
+# [Joker Framework](https://github.com/uhil-dotNet-estudos/GeradorArquivoDDD)
 [![Build Status](https://travis-ci.org/uhil-dotNet-estudos/GeradorArquivoDDD.svg?branch=master)](https://travis-ci.org/uhil-dotNet-estudos/GeradorArquivoDDD)
-[![Coverage Status](https://coveralls.io/repos/github/videojs/video.js/badge.svg?branch=master)](https://coveralls.io/github/videojs/video.js?branch=master)
-[![Slack Status](http://slack.videojs.com/badge.svg)](http://slack.videojs.com)
+[![Coverage Status](https://coveralls.io/repos/github/uhil-dotNet-estudos/ProjetoModeloDDD/badge.svg?branch=master)](https://coveralls.io/github/uhil-dotNet-estudos/ProjetoModeloDDD?branch=master)
 
 
-[![NPM](https://nodei.co/npm/video.js.png?downloads=true&downloadRank=true)](https://nodei.co/npm/video.js/)
-
-> Video.js is a web video player built from the ground up for an HTML5 world. It supports HTML5 and Flash video, as well as YouTube and Vimeo (through [plugins](https://github.com/videojs/video.js/wiki/Plugins)). It supports video playback on desktops and mobile devices. This project was started mid 2010, and the player is now used on over ~~50,000~~ ~~100,000~~ 200,000 websites.
+> Inicio da caminhada do Joker framework.
 
 ## Quick start
-Thanks to the awesome folks over at [Fastly](http://www.fastly.com/), there's a free, CDN hosted version of Video.js that anyone can use.
-Also, check out the [Getting Started](http://videojs.com/getting-started/) page on our website which has the latest urls as well.
-Simply add these includes to your document's
+Foco na agilidade.
 `<head>`:
 
-```html
-<link href="//vjs.zencdn.net/5.8/video-js.min.css" rel="stylesheet">
-<script src="//vjs.zencdn.net/5.8/video.min.js"></script>
+
+
+```DOS
+ > Install-Package EntityFramework
 ```
 
 Then, whenever you want to use Video.js you can simply use the `<video>` element as your normally would, but with an additional `data-setup` attribute containing any Video.js options. These options
