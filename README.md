@@ -1,4 +1,4 @@
-![README.MD](http://ap.imagensbrasil.org/images/2016/10/04/jokerFramework.jpg)
+![README.MD](http://ap.imagensbrasil.org/images/2016/10/04/d52474b66a13b442bad2d4e9b58f9909.jpg)
 
 # [Video.js - HTML5 Video Player](http://videojs.com)
 [![Build Status](https://travis-ci.org/videojs/video.js.svg?branch=master)](https://travis-ci.org/videojs/video.js)
