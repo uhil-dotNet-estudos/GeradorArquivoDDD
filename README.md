@@ -17,38 +17,15 @@ Foco na agilidade.
  > Install-Package EntityFramework
 ```
 
-Then, whenever you want to use Video.js you can simply use the `<video>` element as your normally would, but with an additional `data-setup` attribute containing any Video.js options. These options
-can include any Video.js option plus potential [plugin](http://videojs.com/plugins/) options, just make sure they're valid JSON!
-
 ```html
 <body>
 <h1>ok</h1>
 </body>
 ```
 
-If you don't want to use auto-setup, you can leave off the `data-setup` attribute and initialize a video element manually.
 
 ```javascript
-var player = videojs('really-cool-video', { /* Options */ }, function() {
-  console.log('Good to go!');
 
-  this.play(); // if you don't trust autoplay for some reason
-
-  // How about an event listener?
-  this.on('ended', function() {
-    console.log('awww...over so soon?');
-  });
-});
 ```
-
-If you're ready to dive in, the [documentation](http://docs.videojs.com) is the first place to go for more information.
-
-## Contributing
-Video.js is a free and open source library, and we appreciate any help you're willing to give. Check out the [contributing guide](/CONTRIBUTING.md).
-
-_Video.js uses [BrowserStack](https://browserstack.com) for compatibility testing_
-## Building your own Video.js from source
-To build your own custom version read the section on [contributing code](/CONTRIBUTING.md#contributing-code) and ["Building your own copy"](/CONTRIBUTING.md#building-your-own-copy-of-videojs) in the contributing guide.
-## License
-
-Video.js is licensed under the Apache License, Version 2.0. [View the license file](LICENSE)
+## Sugestões:
+uhitlei@gmail.com
