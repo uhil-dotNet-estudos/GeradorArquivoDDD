@@ -120,6 +120,9 @@ namespace WFGeradorArquivoDDD
             }
         }
 
+
+        #region  GerarRepository
+
         private void GerarIRepository(String nomeClasse)
         {
             var conteudo = new StringBuilder();
@@ -133,8 +136,12 @@ namespace WFGeradorArquivoDDD
             conteudo.AppendLine("    }                                                                ");
             conteudo.AppendLine("}                                                                    ");
 
-            GerarArquivo(String.Format(@"{0}\I{1}{2}.cs", CaminhoInterfaceRepositoryTxt.Text,nomeClasse,SufixoRepository.Text ), conteudo.ToString());
+            GerarArquivo(String.Format(@"{0}\I{1}{2}.cs", this.CaminhoInterfaceRepositoryTxt.Text,nomeClasse,this.SufixoRepository.Text ), conteudo.ToString());
         }
+
+        #endregion
+
+        #region  GerarRepository
 
         private void GerarRepository(String nomeClasse)
         {
@@ -157,6 +164,10 @@ namespace WFGeradorArquivoDDD
 
         }
 
+        #endregion
+
+        #region  GerarIApplication
+
         private void GerarIApplication(String nomeClasse)
         {
             var conteudo = new StringBuilder();
@@ -173,7 +184,9 @@ namespace WFGeradorArquivoDDD
             GerarArquivo(String.Format(@"{0}\I{1}{2}.cs", this.CaminhoInterfaceApplicationtxt.Text, nomeClasse, this.SufixoApplicaion.Text), conteudo.ToString());
 
         }
+        #endregion
 
+        #region  GerarApplication
         private void GerarApplication(String nomeClasse)
         {
             var conteudo = new StringBuilder();
@@ -201,6 +214,9 @@ namespace WFGeradorArquivoDDD
 
         }
 
+        #endregion
+
+        #region GerarIService
         private void GerarIService(String nomeClasse)
         {
             var conteudo = new StringBuilder();
@@ -214,10 +230,12 @@ namespace WFGeradorArquivoDDD
             conteudo.AppendLine(("    }                                                               "));
             conteudo.AppendLine(("}                                                                   "));
             
-            GerarArquivo(String.Format(@"{0}\I{1}{2}.cs", this.CaminhoInterfaceRepositoryTxt.Text, nomeClasse, this.SufixoService.Text), conteudo.ToString());
+            GerarArquivo(String.Format(@"{0}\I{1}{2}.cs", this.CaminhoIterfaceServiceTxt.Text, nomeClasse, this.SufixoService.Text), conteudo.ToString());
 
         }
+        #endregion
 
+        #region GerarService
         private void GerarService(String nomeClasse)
         {
             var conteudo = new StringBuilder();
@@ -244,6 +262,7 @@ namespace WFGeradorArquivoDDD
             GerarArquivo(String.Format(@"{0}\{1}{2}.cs", this.CaminhoServiceTxt.Text, nomeClasse, this.SufixoService.Text), conteudo.ToString());
 
         }
+        #endregion
 
         private static void GerarArquivo(string fileName, string Conteudo)
         {
@@ -257,6 +276,20 @@ namespace WFGeradorArquivoDDD
             l_SrLog.WriteLine(Conteudo);
             l_SrLog.Flush();
             l_SrLog.Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.Filter = @"Arquivo Xml|*.xml";
+
+            if (openFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                txtCaminhoArquivo.Text = openFileDialog1.FileName;
+
+                StreamReader sr = new StreamReader(openFileDialog1.FileName);
+               // MessageBox.Show(sr.ReadToEnd());
+                sr.Close();
+            }
         }
 
        
