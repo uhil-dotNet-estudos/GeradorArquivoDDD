@@ -85,5 +85,23 @@ namespace GeradorArquivoDDD.Dominio
 
             return returnedXmlClass;
         }
+
+        public void GravarArquivoXml(String a_nomeArquivo, String a_conteudo, string a_pathLog)
+        {
+            try
+            {
+                if (!Directory.Exists(a_pathLog))
+                {
+                    Directory.CreateDirectory(a_pathLog);
+                }
+                StreamWriter l_SrLog = new StreamWriter(String.Format("{0}{1}.xml", a_pathLog ,a_nomeArquivo), true, Encoding.UTF8);
+                l_SrLog.WriteLine(a_conteudo);
+                l_SrLog.Flush();
+                l_SrLog.Close();
+            }
+            catch (Exception e)
+            {
+            }
+        }
     }
 }
